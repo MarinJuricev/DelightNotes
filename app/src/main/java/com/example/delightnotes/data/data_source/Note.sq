@@ -1,0 +1,29 @@
+CREATE TABLE Note (
+    label TEXT NOT NULL UNIQUE PRIMARY KEY,
+    quantity INTEGER NOT NULL DEFAULT 0
+);
+
+selectAll:
+SELECT *
+FROM Note
+ORDER BY label;
+
+insertOrReplace:
+INSERT OR REPLACE INTO Note(
+  label,
+  quantity
+)
+VALUES (?, ?);
+
+selectByLabel:
+SELECT *
+FROM Note
+WHERE label = ?;
+
+drop:
+DELETE FROM Note;
+
+deleteByLabel:
+DELETE
+FROM Note
+WHERE label = ?;
