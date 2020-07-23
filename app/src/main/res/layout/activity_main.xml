@@ -23,16 +23,16 @@
         android:layout_marginBottom="16dp"
         android:text="@string/add_note"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/delete_note"
+        app:layout_constraintEnd_toStartOf="@+id/delete_notes"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/delete_note"
+        android:id="@+id/delete_notes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="@string/delete_note"
+        android:text="@string/delete_notes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
